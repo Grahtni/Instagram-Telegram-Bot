@@ -1,5 +1,5 @@
 require("dotenv").config();
-const { Bot } = require("grammy");
+const { Bot, webhookCallback } = require("grammy");
 const instagramGetUrl = require("instagram-url-direct");
 const regex = /https?:\/\/(www\.)?instagram\.com\/[a-zA-Z0-9_\.]+\/?/;
 
@@ -72,4 +72,4 @@ bot.on("msg", async (ctx) => {
 
 // Run
 
-bot.start();
+export default webhookCallback(bot, "http");

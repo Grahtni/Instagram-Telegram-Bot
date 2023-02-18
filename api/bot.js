@@ -14,7 +14,7 @@ bot.command("start", async (ctx) => {
     .reply("*Welcome!* ✨ Send an Instagram link.", {
       parse_mode: "Markdown",
     })
-    .then(console.log(ctx.from))
+    .then(console.log("New user added:", ctx.from))
     .catch((e) => console.error(e));
 });
 

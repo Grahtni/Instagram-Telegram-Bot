@@ -2,6 +2,7 @@
   "dependencies": {
     "dotenv": "^16.0.3",
     "grammy": "^1.14.1",
-    "instagram-url-direct": "^1.0.13"
+    "instagram-url-direct": "^1.0.13",
+    "mysql2": "^3.1.2"
   }
 }

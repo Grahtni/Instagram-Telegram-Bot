@@ -45,7 +45,7 @@ SELECT * FROM users WHERE userid = ?
               }
             );
           } else {
-            console.log("User exists in database.", ctx.from.id);
+            console.log("User exists in database.", ctx.from);
           }
         }
       )
